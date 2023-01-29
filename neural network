@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 # Load the content and style images
-content_image = tf.io.read_file("https://source.unsplash.com/random/256x256/?art&0.3869075165758794")
+content_image = tf.io.read_file("https://source.unsplash.com/random/550x550/?art&0.3869075165758794")
 content_image = tf.image.decode_jpeg(content_image, channels=3)
 style_image = tf.io.read_file("https://source.unsplash.com/random/256x256/?art&")
 style_image = tf.image.decode_jpeg(style_image, channels=3)
